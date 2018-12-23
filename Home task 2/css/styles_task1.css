@@ -1,0 +1,48 @@
+h1 {
+    text-align: right;
+    color: orange;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+em {
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#allotment h2 {
+    color: orange;
+}
+
+#warehouse h2 {
+    color: blue;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+ol {
+    font-weight: normal;
+}
+
+ol.vegetables-list {
+    color: red;
+}
+
+#allotment ol.fruits-list {
+    color: grey;
+}
+
+#warehouse ol.fruits-list {
+    color: green;
+}

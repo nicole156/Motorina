@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #a64dff;
+    overflow: hidden;
+}
+
+.top-bar {
+    font-family: 'Economica', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.top-bar a {
+    float: left;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 17px;
+}
+
+a.right-sided-button {
+    float: right;
+}
+
+.top-bar a.active {
+    background-color: #eeeeee;
+    color: #a0a0a0;
+}

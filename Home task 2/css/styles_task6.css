@@ -1,0 +1,24 @@
+section:first-of-type {
+    border: red solid 1px;
+    background-color: pink;
+    text-align: center;
+}
+
+section:first-of-type ul.inline_block_nav li {
+    display: inline-block;
+    border: black solid 1px;
+    padding: 10px;
+}
+
+section:last-of-type {
+    border: black solid 1px;
+    background-color: plum;
+    text-align: center;
+}
+
+section:last-of-type ul.floated_nav li {
+    border: aqua solid 1px;
+    padding: 5px 0;
+    width: 25%;
+    float: left;
+}

@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+}
+
+.container {
+    padding: 0 70px;
+    font-family: MyriadPro-Regular;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.page-header {
+    height: 135px;
+    background-color: #333;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-header-logo {
+    display: inline-block;
+    color: #eee;
+    font-size: 56px;
+    line-height: 1;
+    padding: 43px 0;
+}
+
+.page-header-menu {
+    list-style-type: none;
+    float: right;
+    padding: 75px 0;
+    font-size: 0;
+}
+
+.page-header-menu-item {
+    display: inline-block;
+}
+
+.page-header-menu-link {
+    text-decoration: none;
+    color: #eee;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.page-header-menu-link:hover {
+    text-decoration: underline;
+}
+
+.page-header-menu-item:not(:last-child)::after {
+    content: "--";
+    color: #eee;
+    padding: 0 5px;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.page-header-menu-item:first-of-type a{
+    color: #00aeef;
+}
+
+/* .page-main-content {
+    padding: 0 70px;
+    max-width: 1100px;
+    margin: 0 auto;
+} */
+
+section {
+    border-bottom: 2px #ccc dotted;
+}
+
+.heading {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+.main-heading {
+    display: inline-block;
+    font-size: 56px;
+    line-height: 1;
+    color: #333;
+    font-weight: 700;
+}
+
+.main-heading-highlight {
+    color: #00aeef;
+}
+
+.secondary-heading {
+    font-size: 47px;
+    line-height: 1;
+    color: #bbb;
+    letter-spacing: -2px;
+}
+
+.text-info-title {
+    color: #555;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+    padding: 35px 1%;
+}
+
+.cards {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    max-width: 30%;
+    background-color: #00aeef;
+    padding: 25px 25px 35px;
+    text-align: center;
+}
+
+.card-heading {
+    font-size: 38px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: -1.6px;
+}
+
+.card-description {
+    font-family: Arial;
+    border-top: 2px dotted #fff;
+    padding-top: 27px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.card:not(:last-of-type) {
+    margin-right: 5%;
+}
+
+.card-button {
+    background-color: #0076a3;
+    box-shadow: inset 0 0 5px rgba(35, 81, 98, 0.75);
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 100%;
+}
+
+.card-button-link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: MyriadPro-Regular;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+}
+
+.card-button-link:hover {
+    text-decoration: underline;
+}
+
+.card-button-link::after {
+    content: ">>";
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.two-columns {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.two-columns-item {
+    width: 50%;
+    float: left;
+}
+
+.two-columns-item:not(:last-of-type) {
+    border-right: #ccc 2px dotted;
+}
+
+.two-columns-item-heading {
+    font-size: 18px;
+    line-height: 1;
+    color: #555;
+    font-weight: 700;
+}
+
+.testimonial {
+    position: relative;
+    padding-right: 33px;
+    padding-top: 33px;
+    font-family: Arial;
+}
+
+.testimonial-avatar {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background-color: #ccc;
+}
+
+.testimonial-wrapper {
+    margin-left: 110px;
+    font-size: 14px;
+}
+
+.testimonial-comment {
+    line-height: 1.5;
+    color: #555;
+}
+
+.testimonial-author {
+    margin-top: 15px;
+    font-weight: 700;
+    color: #555;
+}
+
+.link {
+    text-decoration: none;
+    color: #00aeef;
+    line-height: 1.5;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.projects {
+    padding-left: 47px;
+}
+
+.project {
+    margin-top: 20px;
+    font-family: Arial;
+}
+
+.project-title {
+    font-size: 20px;
+    line-height: 1;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.project-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+.project-link {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.project-link::after {
+    content: ">>";
+    color: #00aeef;
+    font-size: 12px;
+    line-height: 1;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.page-footer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.page-footer-text {
+    color: #888;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.page-footer-text-item:not(:last-of-type)::after {
+    content: "~";
+    color: #888;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    margin: 0 5px;
+}
